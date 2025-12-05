@@ -9,9 +9,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import chaintech.videoplayer.host.MediaPlayerHost
-import chaintech.videoplayer.ui.audio.AudioPlayerComposable
 import chaintech.videoplayer.model.AudioFile
-import mp3player.composeapp.generated.resources.Res
+import chaintech.videoplayer.ui.audio.AudioPlayerComposable
 
 @Composable
 fun App() {
@@ -35,11 +34,11 @@ fun App() {
                     .fillMaxWidth()
                     .height(250.dp),
                 playerHost = MediaPlayerHost(
-                    Res.getUri("files/sample.mp3"),
+                    "http://localhost:8080/music/carousel.mp3",
                 ),
                 audios = listOf(
                     AudioFile(
-                        audioUrl = Res.getUri("files/sample.mp3"),
+                        audioUrl = "http://localhost:8080/music/carousel.mp3",
                         audioTitle = "Carousel Music"
                     )
                 )
