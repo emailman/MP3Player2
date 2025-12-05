@@ -1,5 +1,9 @@
 This is a Kotlin Multiplatform project targeting Web, Desktop (JVM).
 
+Audio playback of an MP3 file is done using ComposeMultiplatformMediaPlayer.
+
+The MP3 file is accessed from an HTTP server running on the local machine.
+
 * [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
   It contains several subfolders:
   - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
